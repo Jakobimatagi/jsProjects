@@ -1,12 +1,19 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import BackgroundColor from '../components/BackgroundColor'
+import Counter from '../components/Counter'
 
 export default function Home() {
   return (
     <div>
-      <h1>Kobi's Projects</h1>
-      <BackgroundColor />
+      <div className="bgColor">
+        <h1>Kobi's Projects</h1>
+        <BackgroundColor />
+      </div>
+      <div className="counter">
+        <h1>Counter</h1>
+        <Counter />
+      </div>
     </div>
   )
 }
