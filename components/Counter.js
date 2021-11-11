@@ -4,10 +4,14 @@ function Counter() {
 
 const [count, setCount] = useState(0)
     return (
-        <div>
+        <div className="counter">
+            <h1>Counter</h1>
             <p>{count}</p>
-            <button onClick={() => setCount(count + 1)}>+</button>
-            <button onClick={() => setCount(count - 1)}>-</button>
+            <div className="buttons">
+                <button className="counter__buttons" onClick={() => setCount(count - 1)}>-</button>
+                <button className="counter__buttons" onClick={() => setCount(0)}>Reset</button>
+                <button className="counter__buttons" onClick={() => setCount(count + 1)}>+</button>
+            </div>
         </div>
     )
 }

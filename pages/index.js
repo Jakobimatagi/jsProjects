@@ -11,7 +11,6 @@ export default function Home() {
         <BackgroundColor />
       </div>
       <div className="counter">
-        <h1>Counter</h1>
         <Counter />
       </div>
     </div>
