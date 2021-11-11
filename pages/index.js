@@ -7,7 +7,6 @@ export default function Home() {
   return (
     <div>
       <div className="bgColor">
-        <h1>Kobi's Projects</h1>
         <BackgroundColor />
       </div>
       <div className="counter">
